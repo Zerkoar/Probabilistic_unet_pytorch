@@ -1,7 +1,7 @@
 # Probabilistic UNet in PyTorch
 A Probabilistic U-Net for segmentation of ambiguous images implemented in PyTorch. This is a pytorch implementation of this paper https://arxiv.org/abs/1806.05034, for which the code can be found here: https://github.com/SimonKohl/probabilistic_unet. 
 
-Fork https://github.com/stefanknegt/Probabilistic-Unet-Pytorch
+## Fork https://github.com/stefanknegt/Probabilistic-Unet-Pytorch
 
 ## Adding KL divergence for Independent distribution
 In order to implement an Gaussian distribution with an axis aligned covariance matrix in PyTorch, I needed to wrap a Normal distribution in a Independent distribution. Therefore you need the add the following to the PyTorch source code at torch/distributions/kl.py (source: https://github.com/pytorch/pytorch/issues/13545).
